@@ -13,34 +13,34 @@ class QqSpider(scrapy.Spider):
 
     #def __init__(self):
        # url_qian = "https://****/cgi-bin/get_fav_list?uin=QQhao&type=0&start="
-        #url_hou = "&num=30&inCharset=utf-8&outCharset=utf-8&need_nick=1&need_cnt=1&need_new_user=1&fupdate=1&random=0.14056805773391323&g_tk=1575700801&qzonetoken=91a1956cf840b16a489955c2c858b26cb93b03375de9f03186e1fde63cd88b0b7fb17658e6349a"
+        #url_hou = "&num=30&inCharset=utf-8&outCharset=utf-8&need_nick=1&need_cnt=1&need_new_user=1&fupdate=1&random=0.14056805773391323&g_tk=1575700801&qzonetoken=cb93b03375de9f03186e1fde63cd88b0b7fb17658e6349a"
 
     def start_requests(self):
         url_qian = "https://****/cgi-bin/get_fav_list?uin=QQhao&type=0&start="
-        url_hou = "&num=30&inCharset=utf-8&outCharset=utf-8&need_nick=1&need_cnt=1&need_new_user=1&fupdate=1&random=0.14056805773391323&g_tk=1575700801&qzonetoken=91a1956cf840b16a489955c2c858b26cb93b03375de9f03186e1fde63cd88b0b7fb17658e6349a"
+        url_hou = "&num=30&inCharset=utf-8&outCharset=utf-8&need_nick=1&need_cnt=1&need_new_user=1&fupdate=1&random=0.14056805773391323&g_tk=1575700801&qzonetoken=cb93b03375de9f03186e1fde63cd88b0b7fb17658e6349a"
 
         start_urls = [url_qian + str(i) + url_hou for i in range(3660, 3739, 30)]
 
         # 指定cookies
         cookies = {
-        'RK': 'Ea5sUIiFGr',
-        '_qpsvr_localtk': '0.9938698970720596',
+        'RK': '',
+        '_qpsvr_localtk': '',
         'cpu_performance_v8': '13',
-        'p_skey': 'CEcQNExKZGKwmp-nrVU-I4fA3t*oUD9wi7nVdf-LeBk_	',
-        'pgv_info': 'ssid=s4645593565',
-        'pgv_pvi': '7260459008',
-        'pgv_si': 's4497869824',
-        'pgv_pvid': '2243225580',
-        'pt4_token': 'bPzitqHvIJqIW8mKt3pmY4uvmOJ7vJDQpWKCdWWy8lw_',
-        'ptcz': '3e05d3d03bc261995dcb6da301496ad02a379348a96b62a39e8c6d9b00be2cb1',
-        'skey': '@orWDjxCLK',
+        'p_skey': '',
+        'pgv_info': '',
+        'pgv_pvi': '',
+        'pgv_si': '',
+        'pgv_pvid': '',
+        'pt4_token': '_',
+        'ptcz': '',
+        'skey': '',
         'p_uin': 'QQhao',
         'Loading': 'Yes',
         'QZ_FE_WEBP_SUPPORT': '1',
         '__guid': '183552575.862613233613063000.1544075476286.3699',
         '__Q_w_s__QZN_TodoMsgCnt': '1',
-        'rv2': '80BEAAF77D194B195DE38D8D7B8ACC1F62B9F4F2BAED4879B9',
-        'property20': '3B7C9F7BE62DBEE6608D3DEA4CCB53F28D94B0C53B4A5556CCB56FD1C804BDF368FE6A4C21643B1A',
+        'rv2': '',
+        'property20': '',
         'monitor_count': '1',
         'ptisp': 'ctc',
         'ptui_loginuin': 'QQhao',
