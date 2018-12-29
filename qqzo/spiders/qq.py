@@ -12,11 +12,11 @@ class QqSpider(scrapy.Spider):
     allowed_domains = ['qq.com']
 
     #def __init__(self):
-       # url_qian = "https://h5.qzone.qq.com/proxy/domain/fav.qzone.qq.com/cgi-bin/get_fav_list?uin=39017246&type=0&start="
+       # url_qian = "https://****/cgi-bin/get_fav_list?uin=QQhao&type=0&start="
         #url_hou = "&num=30&inCharset=utf-8&outCharset=utf-8&need_nick=1&need_cnt=1&need_new_user=1&fupdate=1&random=0.14056805773391323&g_tk=1575700801&qzonetoken=91a1956cf840b16a489955c2c858b26cb93b03375de9f03186e1fde63cd88b0b7fb17658e6349a"
 
     def start_requests(self):
-        url_qian = "https://h5.qzone.qq.com/proxy/domain/fav.qzone.qq.com/cgi-bin/get_fav_list?uin=39017246&type=0&start="
+        url_qian = "https://****/cgi-bin/get_fav_list?uin=QQhao&type=0&start="
         url_hou = "&num=30&inCharset=utf-8&outCharset=utf-8&need_nick=1&need_cnt=1&need_new_user=1&fupdate=1&random=0.14056805773391323&g_tk=1575700801&qzonetoken=91a1956cf840b16a489955c2c858b26cb93b03375de9f03186e1fde63cd88b0b7fb17658e6349a"
 
         start_urls = [url_qian + str(i) + url_hou for i in range(3660, 3739, 30)]
@@ -34,7 +34,7 @@ class QqSpider(scrapy.Spider):
         'pt4_token': 'bPzitqHvIJqIW8mKt3pmY4uvmOJ7vJDQpWKCdWWy8lw_',
         'ptcz': '3e05d3d03bc261995dcb6da301496ad02a379348a96b62a39e8c6d9b00be2cb1',
         'skey': '@orWDjxCLK',
-        'p_uin': 'o0039017246',
+        'p_uin': 'QQhao',
         'Loading': 'Yes',
         'QZ_FE_WEBP_SUPPORT': '1',
         '__guid': '183552575.862613233613063000.1544075476286.3699',
@@ -43,9 +43,9 @@ class QqSpider(scrapy.Spider):
         'property20': '3B7C9F7BE62DBEE6608D3DEA4CCB53F28D94B0C53B4A5556CCB56FD1C804BDF368FE6A4C21643B1A',
         'monitor_count': '1',
         'ptisp': 'ctc',
-        'ptui_loginuin': '39017246',
-        'pt2gguin': 'o0039017246',
-        'uin': 'o0039017246',
+        'ptui_loginuin': 'QQhao',
+        'pt2gguin': 'QQhao',
+        'uin': 'QQhao',
         '__Q_w_s_hat_seed': '1'}
 
         # 再次请求到详情页，并且声明回调函数callback，dont_filter=True 不进行域名过滤，meta给回调函数传递数据
